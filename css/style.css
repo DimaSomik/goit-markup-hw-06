@@ -724,6 +724,10 @@
                 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.modal-closed {
+    display: none;
+}
+
 /* Other */
 body {
     font-family: Roboto, sans-serif;

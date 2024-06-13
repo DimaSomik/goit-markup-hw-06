@@ -475,10 +475,10 @@
       </div>
     </footer>
 
-    <div class="modal-div">
+    <div class="modal-div" id="modal-div">
       <!--Modal Window-->
       <div class="modal">
-        <button type="button" class="modal-button">
+        <button type="button" class="modal-button" id="modal-close-button">
           <svg width="8" height="8" class="modal-button-svg">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -545,7 +545,7 @@
           </div>
 
           <!--Button-->
-          <button class="modal-form-button">
+          <button type="submit" class="modal-form-button">
             Send
           </button>
 
@@ -554,5 +554,19 @@
     </div>
 
   </body>
+
+  <script>
+
+    const CLOSED_CLASS = "modal-closed";
+
+    const modal_div = document.querySelector("#modal-div"); 
+
+    const closeButton = document.querySelector("#modal-close-button");
+    closeButton.addEventListener("click", () => {
+      modal_div.classList.add(CLOSED_CLASS);
+    });
+
+  </script>
+
 </html>
 
