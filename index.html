@@ -17,8 +17,9 @@
 
       <!--Navigation bar-->
       <div class="div-header container">
-      <nav class="navigation-header">
+      <nav class="navigation-header">  
         <a href="./index.html" class="navigation-logo">Web<span class="navigation-bar-span">Studio</span></a>
+        
         <ul class="nav-menu">
           <li><a href="./index.html" class="navigation-link link-alignment link-active">Studio</a></li>
           <li><a href="" class="navigation-link link-alignment">Portfolio</a></li>
@@ -32,7 +33,78 @@
         <li><a href="tel:+110001111111" class="header-address-links">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+
+      <button type="button" class="nav-header-button" id="hamButton">
+        <svg width="24" height="24" class="nav-header-button-svg">
+          <use href="./images/icons.svg#icon-hamburger"></use>
+        </svg>
+      </button> 
       </div>
+
+      <!--Mobile Menu-->
+      <nav class="mobile-menu-nav modal-closed" id="mobile-menu-nav">
+
+      <div class="mobile-menu-div">
+        <!--Button-->
+        <button type="button" class="mobile-menu-button" id="mobile-menu-button">
+          <svg width="8" height="8" class="mobile-menu-button-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <!--Navigation-->
+          <ul class="mobile-menu-nav-list">
+            <li><a href="./index.html" class="mobile-menu-navigation-link mobile-menu-link-active">Studio</a></li>
+            <li><a href="" class="mobile-menu-navigation-link">Portfolio</a></li>
+            <li><a href="" class="mobile-menu-navigation-link">Contacts</a></li>
+          </ul>
+        
+
+        <!--Address-->
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-unordered-list">
+          <li><a href="tel:+110001111111" class="mobile-menu-address-links mobile-menu-link-active">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="mobile-menu-address-links mobile-menu-link-unactive">info@devstudio.com</a></li>
+          </ul>
+        </address>
+
+        <!--Icons-->
+        <ul class="mobile-menu-list-item-icons">
+          <li class="mobile-menu-list-item-icons-item">
+            <a href="" class="mobile-menu-list-item-icons-item-link">
+              <svg width="25" height="25" class="mobile-menu-list-item-icons-item-link-svg">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-list-item-icons-item">
+            <a href="" class="mobile-menu-list-item-icons-item-link">
+              <svg width="25" height="25" class="mobile-menu-list-item-icons-item-link-svg">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-list-item-icons-item">
+            <a href="" class="mobile-menu-list-item-icons-item-link">
+              <svg width="25" height="25" class="mobile-menu-list-item-icons-item-link-svg">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-list-item-icons-item">
+            <a href="" class="mobile-menu-list-item-icons-item-link">
+              <svg width="25" height="25" class="mobile-menu-list-item-icons-item-link-svg">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      </nav>
     </header>
 
     <!--Main-->
@@ -111,8 +183,10 @@
           <!--1 Item-->
           <li class="third-section-list-item">
             <img
+              srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
               src="./images/img1.jpg"
               alt="Middle-aged man in a blue shirt with short stubble"
+              class="third-section-list-item-image"
               width="264"
             >
             <div class="third-section-div">
@@ -157,8 +231,10 @@
           <!--2 Item-->
           <li class="third-section-list-item">
             <img
+              srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
               src="./images/img2.jpg"
               alt="Young man in a turquoise shirt with combed back hair"
+              class="third-section-list-item-image"
               width="264"
             >
             <div class="third-section-div">
@@ -203,8 +279,10 @@
           <!--3 Item-->
           <li class="third-section-list-item">
             <img
+              srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
               src="./images/img3.jpg"
               alt="Adult girl in a pink sweater with long brown hair"
+              class="third-section-list-item-image"
               width="264"
             >
             <div class="third-section-div">
@@ -249,8 +327,10 @@
           <!--4 Item-->
           <li class="third-section-list-item"> 
             <img
+              srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
               src="./images/img4.jpg"
               alt="Skinny man in a gray T-shirt with a delicate beard"
+              class="third-section-list-item-image"
               width="264"
             >
             <div class="third-section-div">
@@ -305,8 +385,10 @@
           <li class="forth-section-list-item">
             <div class="forth-section-list-item-div">
             <img
+              srcset="./images/img1_Portfolio.jpg 1x, ./images/img1_Portfolio@2x.jpg 2x"
               src="./images/img1_Portfolio.jpg"
               alt="Main menu of the bank application"
+              class="forth-section-list-item-image"
               width="360"
               height="300"
             >
@@ -322,8 +404,10 @@
           <li class="forth-section-list-item">
             <div class="forth-section-list-item-div">
             <img
+              srcset="./images/img2_Portfolio.jpg 1x, ./images/img2_Portfolio@2x.jpg 2x"
               src="./images/img2_Portfolio.jpg"
               alt="Man is scanning QR-Code using his phone"
+              class="forth-section-list-item-image"
               width="360"
               height="300"
             >
@@ -339,8 +423,10 @@
           <li class="forth-section-list-item">
             <div class="forth-section-list-item-div">
             <img
+              srcset="./images/img3_Portfolio.jpg 1x, ./images/img3_Portfolio@2x.jpg 2x"
               src="./images/img3_Portfolio.jpg"
               alt="Article with title Return to Normalcy"
+              class="forth-section-list-item-image"
               width="360"
               height="300"
             >
@@ -356,8 +442,10 @@
           <li class="forth-section-list-item">
             <div class="forth-section-list-item-div">
             <img
+              srcset="./images/img4_Portfolio.jpg 1x, ./images/img4_Portfolio@2x.jpg 2x"
               src="./images/img4_Portfolio.jpg"
               alt="Taxi driver in a car cabin"
+              class="forth-section-list-item-image"
               width="360"
               height="300"
             >
@@ -373,8 +461,10 @@
           <li class="forth-section-list-item">
             <div class="forth-section-list-item-div">
             <img
+              srcset="./images/img5_Portfolio.jpg 1x, ./images/img5_Portfolio@2x.jpg 2x"
               src="./images/img5_Portfolio.jpg"
               alt="Four different mobile wallpapers"
+              class="forth-section-list-item-image"
               width="360"
               height="300"
             >
@@ -390,8 +480,10 @@
           <li class="forth-section-list-item">
             <div class="forth-section-list-item-div">
             <img
+              srcset="./images/img6_Portfolio.jpg 1x, ./images/img6_Portfolio@2x.jpg 2x"
               src="./images/img6_Portfolio.jpg"
               alt="Woman in an orange sweater laughing, while staring at her phone"
+              class="forth-section-list-item-image"
               width="360"
               height="300" 
             >
@@ -555,15 +647,28 @@
 
   </body>
 
-  <script>
+  <script>  
 
     const CLOSED_CLASS = "modal-closed";
+    const OPEN_CLASS = "is-open"
 
     const modal_div = document.querySelector("#modal-div"); 
+    const mobile_menu = document.querySelector("#mobile-menu-nav")
 
     const closeButton = document.querySelector("#modal-close-button");
     closeButton.addEventListener("click", () => {
       modal_div.classList.add(CLOSED_CLASS);
+      mobile_menu.classList.remove(CLOSED_CLASS);
+    });
+
+    const hamburgerButton = document.querySelector("#hamButton");
+    hamburgerButton.addEventListener("click", () => {
+      mobile_menu.classList.add(OPEN_CLASS);
+    });
+
+    const menuCloseButton = document.querySelector("#mobile-menu-button");
+    menuCloseButton.addEventListener("click", () => {
+      mobile_menu.classList.remove(OPEN_CLASS);
     });
 
   </script>
