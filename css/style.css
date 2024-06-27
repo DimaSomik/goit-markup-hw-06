@@ -925,7 +925,7 @@ img {
 
 .container {
     max-width: 100%; 
-    width: 1158px; 
+    width: 320px; 
     margin: 0 auto; 
     padding: 0px 15px;
 }
@@ -941,6 +941,10 @@ img {
 
 /* Tablet */
 @media (768px <= width < 1158px) {
+    .container {
+        width: 768px;
+    }
+
     .mobile-menu-nav {
         display: none;
     }
@@ -1095,6 +1099,10 @@ img {
 
 /* Desktop */
 @media (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
     .mobile-menu-nav {
         display: none;
     }
