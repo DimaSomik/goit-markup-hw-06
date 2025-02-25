@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-Zadanie Domowe Nr. 2 - Ustawienie CSS dla strony.
+# goit-markup-hw-06
+Homework nr. 6 - Responsive design
